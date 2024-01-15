@@ -17,14 +17,6 @@ const Applications = () => {
     fetchApplications();
   }, []);
 
-  if (loading) {
-    return (
-      <div className={styles.Loading}>
-        <p>Loading...</p>
-      </div>
-    );
-  }
-
   return (
     <div className={styles.Applications}>
       {error && (
