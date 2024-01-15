@@ -1,13 +1,13 @@
 import React from 'react';
 import Applications from './Applications';
 import { render } from '@testing-library/react';
-import MockAdapter from 'axios-mock-adapter';
-import axios from 'axios';
+// import MockAdapter from 'axios-mock-adapter';
+// import axios from 'axios';
 // import getSingleApplicationFixture from './__fixtures__/applications.fixture.js';
 // import { useFetchApplications } from './hooks/useFetchApplications';
 
 describe('Applications page', () => {
-  const mock = new MockAdapter(axios);
+  //   const mock = new MockAdapter(axios);
 
   test('Loading state is true when page renders.', () => {
     const { getByText } = render(<Applications />);
